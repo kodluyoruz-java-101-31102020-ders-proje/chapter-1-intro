@@ -20,11 +20,13 @@ public class Application {
 		
 		// PDF dokümanı içeriğini byte dizisine çeviriyoruz.
 		byte[] pdfFileContent = "Hello PDF document!".getBytes();
-		Document pdfDocument = new Document("batuhan_duzgun_cv", "pdf", pdfFileContent);
+		Document pdfDocument = new Document("batuhan_duzgun_cv_pdf", "pdf", pdfFileContent);
 		
 		// Printer sınıfındaki 'print' fonksiyonu static tipindedir. 
 		// Dolayısıyla Printer sınıfından bir nesne oluşturmadan direkt sınıf üzerinden 'print' fonksiyonunu çağırabiliriz.
 		Printer.print(pdfDocument);
+		
+		System.out.println(Printer.printedDocumentCount);
 	}
 
 }

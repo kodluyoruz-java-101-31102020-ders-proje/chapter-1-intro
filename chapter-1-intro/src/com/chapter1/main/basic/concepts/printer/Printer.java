@@ -6,7 +6,7 @@ public class Printer {
 
 	// static değişkenler nesne değişkeni DEĞİLDİR!
 	// Bu tip değişkenler sınıfa aittirler.
-	private static long printedDocumentCount = 0;
+	public static long printedDocumentCount = 0;
 	
 	// static fonksiyonlar sınıfa aittir. Nesne örneğine bağlı değildir.
 	public static void print(Document document) {
