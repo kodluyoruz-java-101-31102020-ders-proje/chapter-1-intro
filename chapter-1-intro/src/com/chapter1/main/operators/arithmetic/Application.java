@@ -22,6 +22,8 @@ public class Application {
 		System.out.println("b % a = " + (b % a) );
 		System.out.println("c % a = " + (c % a) );
 		
+		// a = a + 1; // ==> a++
+		
 		System.out.println("a++ = " + (a++) );
 		System.out.println("After a++= " + a);
 		
@@ -29,6 +31,8 @@ public class Application {
 		System.out.println("After b--= " + b);
 		
 		System.out.println("d++ = " + (d++) );
+		
+		
 		
 		System.out.println("++d = " + (++d) );
 		System.out.println("After ++d= " + d);

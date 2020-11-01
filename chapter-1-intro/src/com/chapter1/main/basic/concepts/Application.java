@@ -26,7 +26,14 @@ public class Application {
 		// Dolayısıyla Printer sınıfından bir nesne oluşturmadan direkt sınıf üzerinden 'print' fonksiyonunu çağırabiliriz.
 		Printer.print(pdfDocument);
 		
-		System.out.println(Printer.printedDocumentCount);
+		System.out.println("Printed Document Count: " + Printer.getPrintedDocumentCount());
+
+		
+		int a = 5;
+		double dd = 10.232;
+		
+		double d;
+		
 	}
 
 }

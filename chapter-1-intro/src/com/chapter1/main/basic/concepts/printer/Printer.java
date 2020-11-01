@@ -6,7 +6,7 @@ public class Printer {
 
 	// static değişkenler nesne değişkeni DEĞİLDİR!
 	// Bu tip değişkenler sınıfa aittirler.
-	public static long printedDocumentCount = 0;
+	private static long printedDocumentCount = 0;
 	
 	// static fonksiyonlar sınıfa aittir. Nesne örneğine bağlı değildir.
 	public static void print(Document document) {
@@ -18,6 +18,13 @@ public class Printer {
 		printFileContent(document.getFileContent());
 		printedDocumentCount = printedDocumentCount + 1;
 	}
+	
+	
+	public static long getPrintedDocumentCount() {
+		
+		return printedDocumentCount;
+	}
+	
 	
 	// private fonksiyon sınıf dışından bir yerden çağrılamaz.
 	private static void printFileContent(byte[] fileContent) {

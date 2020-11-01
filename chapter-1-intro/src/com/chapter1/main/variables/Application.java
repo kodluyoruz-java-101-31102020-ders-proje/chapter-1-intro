@@ -1,12 +1,23 @@
 package com.chapter1.main.variables;
 
+import com.chapter1.main.basic.concepts.document.Document;
+
 public class Application {
 
+	private static Document emptyDocument = new Document();
+	
 	public static void main(String[] args) {
 		
 		runPrimitiveVariables();
 		
 		runClassBasedVariables();
+		
+		// Integer number1 = null; null olursa primitive'e (int) çevirmede hata alırsınız!
+		Integer number1 = 0;
+		
+		show(number1);
+		
+		getDocument(2);
 	}
 	
 	private static void runPrimitiveVariables() {
@@ -60,6 +71,24 @@ public class Application {
 		System.out.println(classFloat);
 		System.out.println(classChar);
 		
+	}
+	
+	private static void show(int number) {
+		
+		System.out.println(number);
+	}
+	
+	private static Document getDocument(int ratio) {
+		
+		if(ratio < 5) {
+			// Hafızadan kazanç sağlar.
+			return emptyDocument;
+			
+			// Bu şekilde kullanırsanız hafızayı kötü kullanırsınız!
+			// return new Document();
+		}
+		
+		return new Document("pdf_file", "pdf", "C".getBytes());
 	}
 
 }
