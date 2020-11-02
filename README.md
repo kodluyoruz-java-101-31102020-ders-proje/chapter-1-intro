@@ -7,15 +7,15 @@ Alıştırma-1:
 Elimizde 11.122.10.19 - 11.122.10.50 arasında IP bloğu olduğunu düşünelim.
 
 Örn:
-Başlangıç
-11.122.10.19
-11.122.10.20
-11.122.10.21
-...
-11.122.10.48
-11.122.10.49
-11.122.10.50
-Bitiş
+- Başlangıç
+- 11.122.10.19
+- 11.122.10.20
+- 11.122.10.21
+- ...
+- 11.122.10.48
+- 11.122.10.49
+- 11.122.10.50
+- Bitiş
 
 
 Scanner nesnesi ile klavyeden IP adresi alınacaktır. Alınan IP adresi eğer 11.122.10 ile başlayan bir IP değilse, ekrana "Geçersiz IP" yazın.
