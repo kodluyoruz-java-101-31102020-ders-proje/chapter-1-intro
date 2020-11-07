@@ -4,6 +4,9 @@ public class Application {
 
 	public static void main(String[] args) {
 		
+		// intiliaze array!
+		int[] initArray = { 5, 6, 7, 9 };
+		
 		IntArray dizi1 = new IntArray(10);
 		int[] data1 = dizi1.fill();
 		
