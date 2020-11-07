@@ -6,6 +6,26 @@ public class MatriceOperations {
 
 	private static DecimalFormat df = new DecimalFormat("#.##");
 	
+	public static double[][] reverseRows(double[][] matrice) {
+		
+		int rowSize = matrice.length;
+		int columnSize = matrice[0].length;
+		
+		double[][] reversedRowsMatrice = new double[rowSize][columnSize];
+		
+		for(int i=0; i < rowSize; i++) {
+			
+			int columnCounter = 0;
+			for(int j=(columnSize-1); j >= 0; j--) {
+				
+				reversedRowsMatrice[i][columnCounter] = matrice[i][j];
+				columnCounter++;
+			}
+		}
+		
+		return reversedRowsMatrice;
+	}
+	
 	public static void print(double[][] matrice) {
 	
 		int rowSize = matrice.length;

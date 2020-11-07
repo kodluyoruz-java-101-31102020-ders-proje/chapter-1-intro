@@ -42,6 +42,13 @@ public class Application {
 		System.out.println("Toplam");
 		MatriceOperations.print(sumMatrice);
 		
+		
+		double[][] reversedRowsMatrice = 
+				MatriceOperations.reverseRows(sumMatrice);
+		
+		System.out.println("Satırları tersine çevrildi");
+		MatriceOperations.print(reversedRowsMatrice);
+		
 		scanner.close();
 	}
 
