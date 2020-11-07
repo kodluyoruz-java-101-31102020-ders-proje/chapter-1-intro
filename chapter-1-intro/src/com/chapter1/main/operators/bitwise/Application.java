@@ -45,7 +45,7 @@ public class Application {
 		System.out.println("a ^ b = " + c );
 		
 		c = ~ a; /*-61 = 1100 0011 */ // -60-1 = -61
-		System.out.println("~a = " + c );
+		System.out.println("~a = " + (c + 1) );
 		
 		
 		int d = 10; // -10-1 = -11
@@ -67,6 +67,23 @@ public class Application {
 		
 		c = a << 5; /* 240 = 1111 0000 */
 		System.out.println("a << 5 = " + c );
+		
+		c = a << 6; /* 240 = 1111 0000 */
+		System.out.println("a << 6 = " + c );
+		
+		c = a << 7; /* 240 = 1111 0000 */
+		System.out.println("a << 7 = " + c );
+		
+		c = a << 8; /* 240 = 1111 0000 */
+		System.out.println("a << 8 = " + c );
+		
+		c = a << 9; /* 240 = 1111 0000 */
+		System.out.println("a << 9 = " + c );
+		
+		
+		char t = 'a';
+		int t1 = t << 2;
+		System.out.println("t1 << 1 = " + ((char)t1) );
 		
 		
 		
